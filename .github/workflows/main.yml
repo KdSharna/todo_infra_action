@@ -1,0 +1,15 @@
+name: Manual Test Pipeline
+
+on:
+  workflow_dispatch:  # 🔥 Manual trigger enabled
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run a test command
+        run: echo "Bhai, pipeline manually chal gayi! ✅"
