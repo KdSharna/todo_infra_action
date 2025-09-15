@@ -1,10 +1,13 @@
-name: Manual Test Pipeline
-
+name: Manual
 on:
-  workflow_dispatch:  # 🔥 Manual trigger enabled
-
+  push:
+    branches: 
+      -  'features/**'
+      -  'main'
+      -  'hotfix/**'
 jobs:
-  build:
+  dhondhumaharaj:  
+    name:  
     runs-on: ubuntu-latest
 
     steps:
